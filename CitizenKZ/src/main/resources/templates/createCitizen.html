@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="/search" class="nav-link">Поиск</a></li>
+        <li class="nav-item"><a href="/create" class="nav-link active" aria-current="page">Регистрация</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link">О нас</a></li>
+
+    </ul>
+</header>
+<meta charset="ISO-8859-1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h2 class="text-center">Registration form</h2>
+<form method="post" enctype="multipart/form-data" class="form-horizontal">
+    <div class="container">
+        <div class="row justify-content-center">
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="control-label col-sm-4">First name</label>
+            <div class="col-sm-5">
+                <input type="text" name="name" class="form-control">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="control-label col-sm-4">Last name</label>
+            <div class="col-sm-5">
+                <input type="text" name="surname" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="control-label col-sm-4">Middle name</label>
+            <div class="col-sm-4">
+                <input type="text" name="otchestvo" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-4">Birth date</label>
+            <div class="col-sm-4">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="form-group">
+            <label class="control-label col-sm-4">IIN</label>
+            <div class="col-sm-2">
+                <input type="number" name="iin" class="form-control">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="col-sm-4 control-label">Birth Place</label>
+            <div class="col-sm-3">
+                <input type="text" name="birth_place" class="form-control" placeholder="Birth place">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="col-sm-6 control-label">Doc given date</label>
+            <div class="col-sm-3">
+                <input type="date" name="give_date" class="form-control" placeholder="Doc date">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="col-sm-4 control-label">Doc given place</label>
+            <div class="col-sm-3">
+                <input type="text" name="give_place" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="col-sm-4 control-label">Gender</label>
+            <div class="col-sm-8">
+                <input type="text" name="sex" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="col-sm-4 control-label">Doc number</label>
+            <div class="col-sm-3">
+                <input type="number" name="doc_number" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="col-sm-4 control-label">Photo</label>
+            <div class="col-sm-8">
+                <input type="file" name="image" accept="image/png, image/jpeg" />
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary waves-effect waves-light " id="btn-submit">Save</button>
+    </div>
+    <input type="hidden" name="action" id="action" value="event_dialog_add_newpartnerdata" />
+        </div>
+    </div>
+</form>
+</html>

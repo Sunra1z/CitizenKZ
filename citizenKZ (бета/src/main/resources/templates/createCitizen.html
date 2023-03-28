@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CitizenKZ</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<div class="container mt-5">
+    <h1>Регистрация жителей</h1>
+    <form method="post">
+        <input type="text" name="name" placeholder="Ваше имя" class="form-control">
+        <input type="text" name="surname" placeholder="Ваша фамилия" class="form-control">
+        <input type="text" name="otchestvo" placeholder="Ваше отчество" class="form-control">
+        <input type="text" name="sex" placeholder="Ваш пол" class="form-control">
+        <input type="date" name="birth_date" placeholder="Ваша дата рождения" class="form-control">
+        <input type="text" name="birth_place" placeholder="Ваш родной город" class="form-control">
+        <input type="number" name="iin" placeholder="Ваш ИИН" class="form-control">
+        <input type="number" name="doc_number" placeholder="Ваш номер документа" class="form-control">
+        <input type="date" name="give_date" placeholder="Дата выдачи документа" class="form-control">
+        <input type="text" name="give_place" placeholder="Место получения документа" class="form-control">
+        <button type="submit" value="save" class="btn btn-success">Зарегистрировать</button>
+    </form>
+</div>
+</body>
+</html>

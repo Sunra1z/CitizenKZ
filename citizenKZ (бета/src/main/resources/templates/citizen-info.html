@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CitizenKZ</title>
+</head>
+<body>
+<h1>CitizenKZ</h1><hr>
+<h4>Подробная информация о гражданине</h4>
+<b>Имя: </b>${kzcitizen.name}<br>
+<b>Фамилия: </b>${kzcitizen.surname}<br>
+<b>Отчество: </b>${kzcitizen.otchestvo}<br>
+<b>Пол: </b>${kzcitizen.sex}<br>
+<b>Дата рождения: </b>${kzcitizen.birth_date}<br>
+<b>Родной город: </b>${kzcitizen.birth_place}<br>
+<b>ИИН: </b>${kzcitizen.iin}<br>
+<b>Номер документа: </b>${kzcitizen.doc_number}<br>
+<b>Дата выдачи документа: </b>${kzcitizen.give_date}<br>
+<b>Место выдачи документа: </b>${CitizenInfo.give_place}<br>
+<hr>
+
+</body>
+</html>

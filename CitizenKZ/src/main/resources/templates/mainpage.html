@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
+        <li class="nav-item"><a href="/search" class="nav-link">Поиск</a></li>
+        <li class="nav-item"><a href="/create" class="nav-link">Регистрация</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link">О нас</a></li>
+
+    </ul>
+</header>
+<div class="container mt-5">
+    <h1>CITIZENKZ</h1>
+</div>
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Добро пожаловать</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">На данной странице вы можете приступить к регистрации своих данных в базу граждан, поиску, а также узнать поподробнее о нас</p>
+        <form th:action="@{/manageUser}" method="post">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="/create" class="btn btn-primary btn-lg" role="button">Приступить к регистрации</a>
+                <a href="/search" class="btn btn-primary btn-lg" role="button">Найти себя</a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
